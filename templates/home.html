@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% include 'cdnlines.html' %}
+</head>
+<body>
+&nbsp;&nbsp;
+<center>
+<form id="post-form" method="POST" action="checkview">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <center><h2>Django Chat</h2></center>
+            </div>
+
+    </div>
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <label>Room Name</label>
+                <input type="text" class="form-control" name="room_name" id="room_name" placeholder="Please enter room name" width="100%">
+                <label>Username Name</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Please enter username name" width="100%">
+                <br>
+                <input type="submit" class="btn btn-primary" width="100%">
+
+            </div>
+
+        </div>
+    </div>
+</form>
+</center>
+</body>
+</html>
